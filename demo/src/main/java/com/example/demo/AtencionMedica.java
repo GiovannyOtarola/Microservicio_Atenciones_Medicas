@@ -1,20 +1,20 @@
 package com.example.demo;
 
 public class AtencionMedica {
-    private int id;
+    private int numeroAtencion;
     private String fecha;
     private String diagnostico;
 
 
-    public AtencionMedica(int id, String fecha, String diagnostico){
-        this.id = id;
+    public AtencionMedica(int numeroAtencion, String fecha, String diagnostico){
+        this.numeroAtencion = numeroAtencion;
         this.fecha = fecha;
         this.diagnostico = diagnostico;
     }
 
     //getters
-    public int getId(){
-        return id;
+    public int getNumeroAtencion(){
+        return numeroAtencion;
     }
 
     public String getFecha(){
