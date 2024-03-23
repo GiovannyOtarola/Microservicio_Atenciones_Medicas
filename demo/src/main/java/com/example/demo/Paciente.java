@@ -19,6 +19,9 @@ public class Paciente {
         this.atencionMedica = atencionMedica;
     }
 
+    public int getCantidadAtencionesMedicas() {
+        return atencionMedica.size();
+    }
     // getters
 
     public int getId(){

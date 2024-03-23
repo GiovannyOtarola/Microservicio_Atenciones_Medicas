@@ -30,17 +30,17 @@ public class PacienteController {
         
         atencionMedicasid3.add(new AtencionMedica(1, "17/07/22", "Dolor de barriga"));
         atencionMedicasid3.add(new AtencionMedica(2, "09/01/24", "Trauma cabeza"));
-        pacientes.add(new Paciente(3, "9205725-0", "Matias", "Gonzalez", 23, atencionMedicasid2));
+        pacientes.add(new Paciente(3, "9205725-0", "Matias", "Gonzalez", 23, atencionMedicasid3));
         
         atencionMedicasid4.add(new AtencionMedica(1, "21/07/22", "Dolor de barriga"));
         atencionMedicasid4.add(new AtencionMedica(2, "28/01/24", "Trauma cabeza"));
-        pacientes.add(new Paciente(4, "9205725-0", "Pepe", "Peron", 64, atencionMedicasid2));
+        pacientes.add(new Paciente(4, "9205725-0", "Pepe", "Peron", 64, atencionMedicasid4));
 
         atencionMedicasid5.add(new AtencionMedica(1, "28/09/22", "Dolor de barriga"));
         atencionMedicasid5.add(new AtencionMedica(2, "02/01/24", "Trauma cabeza"));
-        pacientes.add(new Paciente(5, "9205725-0", "Diego", "Lopez", 17, atencionMedicasid2));
+        atencionMedicasid5.add(new AtencionMedica(3, "08/01/24", "Trauma pierna"));
+        pacientes.add(new Paciente(5, "9205725-0", "Diego", "Lopez", 17, atencionMedicasid5));
 
-        
         
     }
 
@@ -58,8 +58,11 @@ public class PacienteController {
         if (paciente.getId() == id) {
             return ResponseEntity.ok(paciente);
         }
+    
     }
     return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No se encontró ningun usuario con el ID proporcionado.");
     }
 
+
+    
 }
