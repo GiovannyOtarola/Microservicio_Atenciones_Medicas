@@ -18,7 +18,7 @@ public class Paciente {
         this.edad = edad;
         this.atencionMedica = atencionMedica;
     }
-
+    // Metodo para contar la cantidad de atenciones
     public int getCantidadAtencionesMedicas() {
         return atencionMedica.size();
     }
